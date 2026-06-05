@@ -1,0 +1,345 @@
+.about .container .row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.primary-orange {
+  color: var(--skd-color-primary);
+}
+
+.color-primary {
+  color: var(--skd-color-primary);
+}
+
+/* Mission Vision Enhancement - Theme Aligned */
+.mission-vision .mv-box {
+  padding: 30px;
+  background: var(--skd-color-base-white);
+  border: 1px solid var(--skd-color-border-light);
+  box-shadow: 0px 2px 15px var(--skd-color-overlay-black-10);
+  transition: all 0.3s ease-in-out;
+  height: 100%;
+  position: relative;
+}
+
+/* Left accent line (subtle premium touch) */
+.mission-vision .mv-box::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 4px;
+  background: var(--skd-color-primary);
+  opacity: 0.8;
+}
+
+/* Hover = consistent with your system */
+.mission-vision .mv-box:hover {
+  transform: translateY(-6px);
+  box-shadow: 10px 15px 30px var(--skd-color-overlay-black-18);
+}
+
+/* Headings */
+.mission-vision .mv-box h4 {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: var(--skd-color-base-dark);
+}
+
+/* Paragraphs */
+.mission-vision .mv-box p {
+  font-size: 15px;
+  color: var(--skd-color-text-secondary);
+  margin-bottom: 0;
+  line-height: 1.6;
+}
+
+/* Values Grid (major upgrade vs plain list) */
+.mission-vision .mv-values {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.mission-vision .mv-values span {
+  font-size: 13px;
+  padding: 6px 12px;
+  border: 1px solid var(--skd-color-border-medium-light);
+  color: var(--skd-color-text-dark);
+  transition: 0.3s;
+}
+
+/* Hover chip effect */
+.mission-vision .mv-values span:hover {
+  background: var(--skd-color-primary);
+  color: var(--skd-color-base-white);
+  border-color: var(--skd-color-primary);
+}
+
+/* About Section Enhancement */
+
+.about .about-img {
+  border-radius: 4px;
+  box-shadow: 0px 5px 25px var(--skd-color-overlay-shadow-dark);
+}
+
+/* Intro text */
+.about .about-intro {
+  font-style: italic;
+  color: var(--skd-color-text-secondary);
+  margin-bottom: 20px;
+}
+
+/* Points container */
+.about .about-points {
+  margin: 20px 0;
+}
+
+/* Individual point (card feel) */
+.about .about-point {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 12px 15px;
+  margin-bottom: 12px;
+  border: 1px solid var(--skd-color-border-light);
+  background: var(--skd-color-base-white);
+  box-shadow: 0px 2px 10px var(--skd-color-overlay-black-10);
+  transition: all 0.3s ease-in-out;
+  position: relative;
+}
+
+/* Left accent */
+.about .about-point::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 3px;
+  background: var(--skd-color-primary);
+}
+
+/* Icon */
+.about .about-point i {
+  color: var(--skd-color-primary);
+  font-size: 18px;
+  margin-top: 2px;
+}
+
+/* Text */
+.about .about-point span {
+  font-size: 14px;
+  color: var(--skd-color-text-primary);
+}
+
+/* Hover effect */
+.about .about-point:hover {
+  transform: translateX(5px);
+  box-shadow: 0px 8px 20px var(--skd-color-overlay-black-18);
+}
+
+/* Closing paragraph */
+.about .about-closing {
+  margin-top: 15px;
+  color: var(--skd-color-text-secondary);
+}
+
+/* Keep left alignment, just enhance spacing */
+
+#hero h1 {
+  margin-bottom: 12px;
+}
+
+/* Fix awkward width of text */
+#hero h2 {
+  max-width: 650px;
+  line-height: 1.6;
+}
+
+/* CTA alignment (inline, clean) */
+.hero-cta {
+  margin-top: 20px;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+/* Secondary button (subtle, not competing) */
+.btn-secondary {
+  font-family: "Cabinet Grotesk", sans-serif;
+  text-transform: uppercase;
+  font-size: 14px;
+  padding: 10px 28px;
+  border: 2px solid var(--skd-color-base-white);
+  color: var(--skd-color-base-white);
+  transition: 0.3s;
+}
+
+.btn-secondary:hover {
+  background: var(--skd-color-base-white);
+  color: var(--skd-color-base-dark);
+}
+
+/* Container */
+.commitment-box {
+  background: var(--skd-color-base-light);
+  padding: 30px;
+  border-radius: 8px;
+}
+
+/* Title */
+.commitment-title {
+  text-align: center;
+  margin-bottom: 25px;
+  font-weight: 600;
+}
+
+/* Each item */
+.commitment-item {
+  text-align: center;
+  padding: 15px 10px;
+  transition: 0.3s ease;
+}
+
+/* Subtle separation */
+.commitment-item h5 {
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.commitment-item p {
+  font-size: 14px;
+  color: var(--skd-color-text-secondary);
+  margin-bottom: 0;
+}
+
+/* Light interaction (not flashy) */
+.commitment-item:hover {
+  transform: translateY(-3px);
+}
+
+@media (max-width: 768px) {
+  /* Hero container */
+  #hero {
+    height: auto;
+    min-height: 85vh;
+    padding: 100px 0 70px 0;
+    display: flex;
+    align-items: center;
+    text-align: center; /* ensures consistency */
+    background-position: center center;
+  }
+
+  #hero .container {
+    padding-top: 10px;
+  }
+
+  /* Heading */
+  #hero h1 {
+    font-size: 30px;
+    line-height: 1.3;
+    margin-bottom: 12px;
+  }
+
+  /* Remove forced line breaks */
+  #hero h1 br {
+    display: none;
+  }
+
+  /* Subheading */
+  #hero h2 {
+    font-size: 16px;
+    line-height: 1.5;
+    max-width: 100%;
+    margin: 0 auto 10px auto;
+  }
+
+  /* CTA container */
+  .hero-cta {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* 🔥 fixes your issue */
+    justify-content: center;
+    gap: 10px;
+    margin-top: 18px;
+  }
+
+  /* Buttons */
+  .btn-get-started,
+  .btn-secondary {
+    font-size: 13px;
+    padding: 8px 20px;
+    width: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Section spacing */
+  .about {
+    padding: 50px 0;
+  }
+
+  /* Image spacing */
+  .about .about-img {
+    margin-bottom: 20px;
+  }
+
+  /* Content spacing */
+  .about .content {
+    padding-top: 0 !important;
+  }
+
+  /* Heading */
+  .about .content h3 {
+    font-size: 22px;
+    line-height: 1.3;
+    margin-bottom: 10px;
+  }
+
+  /* Intro text */
+  .about .about-intro {
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+
+  /* Points container */
+  .about .about-points {
+    margin: 15px 0;
+  }
+
+  /* Individual point cards */
+  .about .about-point {
+    padding: 10px 12px;
+    margin-bottom: 10px;
+    gap: 8px;
+  }
+
+  /* Icon */
+  .about .about-point i {
+    font-size: 16px;
+  }
+
+  /* Text inside points */
+  .about .about-point span {
+    font-size: 13px;
+    line-height: 1.4;
+  }
+
+  /* Reduce hover movement for mobile (prevents jumpiness) */
+  .about .about-point:hover {
+    transform: none;
+    box-shadow: 0px 2px 10px var(--skd-color-overlay-black-10);
+  }
+
+  /* Closing paragraph */
+  .about .about-closing {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-top: 10px;
+  }
+}

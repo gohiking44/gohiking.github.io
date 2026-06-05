@@ -1,0 +1,21 @@
+{
+  "name": "test-port",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "format": "biome format --write .",
+    "format:check": "biome format --check .",
+    "lint": "biome lint .",
+    "lint:fix": "biome lint --fix .",
+    "check": "biome check --fix .",
+    "check:ci": "biome ci",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@biomejs/biome": "^2.4.13"
+  }
+}

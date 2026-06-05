@@ -1,0 +1,47 @@
+# Node modules
+node_modules/
+package-lock.json
+yarn.lock
+
+# Documentation (Generated/Temporary)
+AUDIT_REPORT.md
+CODEBASE_INVENTORY.md
+COLOR_TOKENS_DOCUMENTATION.md
+IMPLEMENTATION_SUMMARY.md
+LICENSE_ATTRIBUTION.md
+SECURITY_FIXES.md
+SETUP_GUIDE.md
+biome_output.txt
+
+# Configuration files (Keep in version control, but consider using environment variables)
+# Uncomment below to ignore sensitive config
+# config.php
+# get-config.php
+
+# OS files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# IDE
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Logs
+*.log
+error_log
+
+# Environment variables (IMPORTANT: Never commit!)
+.env
+.env.local
+.env.*.local
+
+# Cache
+.cache/
+
+# Temporary files
+*.tmp
+*.temp
